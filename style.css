@@ -54,13 +54,13 @@
     75% {
         height: 350px;
         opacity: 0px;
-        background-image: url("https://www.dabur.com/assets/bxslider/images/gifs/rain.gif");
+       background-image: url(..);
         opacity: 1;
         background-size: cover;
     }
     100% {
         opacity: 0.1;
-        background-image: url("https://www.dabur.com/assets/bxslider/images/gifs/leaf.gif");
+        background-image: url(..);
         height: 350px;
         opacity: 1;
         background-size: cover;
