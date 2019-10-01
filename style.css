@@ -1,121 +1,70 @@
-/* h1 {
-     color: red;
- }
- 
- h1:hover {
-     color: blue;
-     transition: 1s color, 10s font-family;
-     font-family: 'Franklin Gothic Medium';
- }
- 
- .image {
-     opacity: 0.1;
-     height: 100px;
-     width: 100px;
-     transition: all 1s;
-     border-radius: 10px;
-     transition-property: height width;
- }
- 
- .image:hover {
-     /* height: 120px;
-     width: 120px; */
-
-
-/* transition: opacity 1s; */
-
-
-/* opacity: 1;
- transition: 4s border-radius,
- 4s opacity;
- border-radius: 100px; */
-
-
-/* transition-property: height width; */
-
-
-/* } */
-
-
-/* */
-
 #top-container {
-    background-color: #0bc770;
+    overflow: hidden;
+    max-height: 300px;
+    background-color: green;
+    /* background-color: #0bc770;
     min-height: 800px;
     margin: auto;
-    padding: 230px 0;
+    padding: 230px 0; */
 }
 
 #block {
     display: block;
     width: 100%;
-    height: 360px;
-    margin: 0 auto;
-    background: #fff url(../banner1.jpg) 40px;
+    /* height: 300px; */
+    /* margin: auto; */
+    /* margin: 0 auto; */
+    /* background:  url(../banner1.jpg);
     background-position: center;
-    background-size: contain;
-    animation-name: fadeIn;
-    -webkit-animation-name: fadeIn;
-}
-
-#block1 {
-    /* display: block; */
-    width: 600px;
-    height: 600px;
-    margin: 0 auto;
-    background: #fff url(../banner1.jpg) 40px;
-    background-position: center;
-    background-size: contain;
+    background-size: contain; */
     animation-name: fadeIn;
     -webkit-animation-name: fadeIn;
 }
 
 .animated {
-    animation-duration: 10s;
-    -webkit-animation-duration: 10s;
+    animation-duration: 30s;
+    -webkit-animation-duration: 30s;
     animation-iteration-count: infinite;
 }
 
 @keyframes fadeIn {
     0% {
         opacity: 1;
-        height: 340px;
+        height: 350px;
+        background: url(../banner1.jpg);
+        background-position: center;
+        background-size: contain;
+    }
+    25% {
+        opacity: 0.1;
+        background: url(../banner2.jpg) 40px;
+        height: 300px;
+        background-position: center;
+        background-size: contain;
+        opacity: 1;
     }
     50% {
-        opacity: 0;
-        background: #fff url(../banner2.jpg) 40px;
+        opacity: 0.1;
+        background: url(../banner3.jpg) 40px;
+        height: 350px;
         background-position: center;
         background-size: contain;
         opacity: 1;
+    }
+    75% {
+        height: 350px;
+        opacity: 0px;
+        background-image: url("https://www.dabur.com/assets/bxslider/images/gifs/rain.gif");
+        opacity: 1;
+        background-size: cover;
     }
     100% {
-        opacity: 0;
-        background: #fff url(../banner3.jpg) 40px;
-        background-position: center;
-        background-size: contain;
+        opacity: 0.1;
+        background-image: url("https://www.dabur.com/assets/bxslider/images/gifs/leaf.gif");
+        height: 350px;
         opacity: 1;
+        background-size: cover;
     }
-    /* 60% {
-        opacity: 0;
-        background: #fff url(../png_79.png) 40px;
-        background-position: center;
-        background-size: contain;
-        opacity: 1;
-    }
-    80% {
-        opacity: 0;
-        background: #fff url(../image_gallery.jpg) 40px;
-        background-position: center;
-        background-size: contain;
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        background: #fff url(../png_79.png) 40px;
-        background-position: center;
-        background-size: contain;
-        opacity: 1;
-    } */
 }
 
 @-webkit-keyframes fadeIn {
