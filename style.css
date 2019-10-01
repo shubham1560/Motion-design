@@ -1,0 +1,23 @@
+h1 {
+    color: red;
+}
+
+h1:hover {
+    color: blue;
+    transition: 4s color;
+}
+
+.image {
+    height: 100px;
+    width: 100px;
+    transition: all 1s;
+    transition-property: height width;
+}
+
+.image:hover {
+    height: 120px;
+    width: 120px;
+    /* transition: opacity 1s; */
+    transition: all 1s;
+    transition-property: height width;
+}
